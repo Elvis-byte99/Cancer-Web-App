@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Cases Distribution in Nairobi</title>
+    <!-- Link to Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Internal CSS -->
+    <style>
+        #map {
+            height: 600px;
+            width: 70%;
+            float: left;
+        }
+
+        #info {
+            padding: 20px;
+            width: 30%;
+            float: left;
+            height: 600px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cancer Cases Distribution in Nairobi</h1>
+    <div id="map"></div>
+    <div id="info">
+        <h2>Click on a marker for more information</h2>
+        <p>Select a location on the map to see details about the number of cancer cases reported.</p>
+    </div>
+
+    <!-- Link to Leaflet.js JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Link to your JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
